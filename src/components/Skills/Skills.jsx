@@ -3,12 +3,12 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 const skillsData = [
-  { id: 'languages', category: "Languages", skills: ["C", "C++", "JavaScript", "SQL", "Python"] },
-  { id: 'frontend', category: "Frontend", skills: ["HTML5", "CSS3", "React.js", "Next.js", "Tailwind CSS", "Three.js", "Functional Dashboard UIs"] },
-  { id: 'backend', category: "Backend", skills: ["Node.js", "Express.js", "PHP"] },
-  { id: 'databases', category: "Databases", skills: ["MongoDB", "MySQL", "PostgreSQL"] },
-  { id: 'tools', category: "Tools", skills: ["Git", "GitHub", "VS Code"] },
-  { id: 'core-cs', category: "Core CS", skills: ["Data Structures & Algorithms", "OOPS", "DBMS"] }
+  { id: 'wordpress', category: "WordPress & eCommerce", skills: ["WordPress", "WooCommerce", "Elementor", "Theme Development", "Plugin Integration"] },
+  { id: 'frontend', category: "Front-End Development", skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Next.js"] },
+  { id: 'customization', category: "Customization & APIs", skills: ["Custom Themes", "Plugin Customization", "Page Builders", "WordPress REST API"] },
+  { id: 'performance', category: "Performance & SEO", skills: ["Core Web Vitals", "Caching", "Image Optimization", "Technical SEO", "Schema Markup"] },
+  { id: 'responsive', category: "Responsive Design", skills: ["Mobile-First Layouts", "Cross-Browser Testing", "Accessible Interfaces"] },
+  { id: 'delivery', category: "Deployment & Support", skills: ["Hosting & cPanel", "SSL & Domains", "Backups", "Security", "Maintenance"] }
 ];
 
 export default function Skills({ timelineTrackRef, setActiveCategory }) {

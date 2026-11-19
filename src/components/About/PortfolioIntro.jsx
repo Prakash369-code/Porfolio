@@ -15,7 +15,7 @@ export default function PortfolioIntro() {
   const mainContentRef = useRef(null); // Layer 1 Wrapper
   const cameraRigRef = useRef(null);   // Layer 2 & 3 Wrapper Rig
   const letterRefs = useRef([]);       // Array of letter spans
-  const nameString = "Manthan Siroya"; // Master string
+  const nameString = "Prakash N"; // Master string
   const theBallRef = useRef(null);     // The persistent physics cursor
   const avatarRef = useRef(null);      // The avatar image inside the cursor
   const loaderBgRef = useRef(null);    // Layer 4 Shield
@@ -338,7 +338,7 @@ export default function PortfolioIntro() {
                     className="absolute top-full mt-[2vw] font-general font-medium text-[#111111] text-lg md:text-[2vw] invisible tracking-wider"
                     style={{ transform: 'translateY(20px)' }}
                   >
-                    A cinematic website creator
+                  WordPress Developer & Digital Creator
                   </div>
 
                 </div>
@@ -395,7 +395,7 @@ export default function PortfolioIntro() {
       </div>
       </section>
 
-      {/* 1st Page Section (Seamlessly merging with the cinematic video above) */}
+      {/* Work section, seamlessly merging with the cinematic video above */}
       <section 
         className="relative w-full min-h-screen flex flex-col items-center justify-center -mt-1"
         style={{
@@ -403,8 +403,8 @@ export default function PortfolioIntro() {
           backgroundImage: 'linear-gradient(to bottom, #4A6B8A, #7EA2C2, #B9D5EB, #EAF3FA, #FFFFFF)'
         }}
       >
-        <h1 className="text-6xl md:text-8xl font-general font-bold text-white drop-shadow-md">1st Page</h1>
-        <p className="mt-6 text-xl font-medium text-white/90">Seamlessly merged with the cinematic sky</p>
+        <h1 className="text-6xl md:text-8xl font-general font-bold text-white drop-shadow-md">Selected Work</h1>
+        <p className="mt-6 text-xl font-medium text-white/90">WordPress websites built for real businesses</p>
       </section>
 
     </div>

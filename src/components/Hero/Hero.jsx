@@ -44,12 +44,12 @@ const Hero = forwardRef(({ bgContainerRef, gridContainerRef, textGroupRef, hello
                   I'm
                 </div>
                 <div ref={subtitleRef} className="absolute top-full mt-[2vw] font-sans font-medium text-[#111111] text-lg md:text-[2vw] tracking-wider opacity-0 translate-y-4">
-                  A cinematic website creator
+                  WordPress Developer & Digital Creator
                 </div>
               </div>
             </div>
             <div ref={nameRef} className="text-[5vw] leading-none font-sans font-medium tracking-[-0.02em] whitespace-nowrap text-[#111111]" style={{ clipPath: "inset(0 100% 0 0)" }}>
-              Manthan Siroya
+              Prakash N
             </div>
           </div>
         </div>

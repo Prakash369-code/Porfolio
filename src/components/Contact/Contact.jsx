@@ -4,25 +4,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 import { cn } from "../../utils";
 import {
-    FaGithub,
     FaTwitter,
     FaLinkedin,
     FaEnvelope,
+    FaFacebook,
+    FaInstagram,
 } from "react-icons/fa";
-import { 
-    SiCodeforces, 
-    SiCodechef, 
-    SiLeetcode 
-} from "react-icons/si";
 
 export const defaultItems = [
-    { letter: "C", icon: <SiCodeforces />, label: "Codeforces", href: "https://codeforces.com/profile/Manthan_Siroya" },
-    { letter: "O", icon: <FaGithub />, label: "Github", href: "https://github.com/ManthanSiroya" },
-    { letter: "N", icon: <FaLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/manthan-siroya-7b084337b/" },
-    { letter: "T", icon: <FaTwitter />, label: "Twitter", href: "https://x.com/Manthan_Siroya" },
-    { letter: "A", icon: <FaEnvelope />, label: "Email", href: "https://mail.google.com/mail/u/0/?fs=1&to=manthansiroya31121@gmail.com&tf=cm" },
-    { letter: "C", icon: <SiCodechef />, label: "Codechef", href: "https://www.codechef.com/users/manthan_siroya" },
-    { letter: "T", icon: <SiLeetcode />, label: "LeetCode", href: "https://leetcode.com/u/Manthan_Siroya/" },
+    { letter: "L", icon: <FaLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/prakash-np" },
+    { letter: "X", icon: <FaTwitter />, label: "X", href: "https://twitter.com/_Prakash_N" },
+    { letter: "F", icon: <FaFacebook />, label: "Facebook", href: "https://www.facebook.com/prakash.virat.73" },
+    { letter: "I", icon: <FaInstagram />, label: "Instagram", href: "https://www.instagram.com/_prakash_official/" },
+    { letter: "E", icon: <FaEnvelope />, label: "Email", href: "mailto:prakashnandhu971@gmail.com" },
 ];
 
 const SocialFlipNode = ({
@@ -137,7 +131,14 @@ export default function SocialFlipButton({
     }, []);
 
     return (
-        <div className={cn("flex items-center justify-center gap-4 p-4", className)}>
+        <div className={cn("flex flex-col items-center justify-center gap-3 p-4 text-center", className)}>
+            <div className="max-w-xl text-slate-900 drop-shadow-sm">
+                <p className="text-lg md:text-xl font-semibold">Got an idea? Let’s build it together.</p>
+                <p className="mt-1 text-sm md:text-base">Available for short, mid, or long-term opportunities.</p>
+                <a className="mt-1 inline-block text-sm md:text-base underline underline-offset-4" href="mailto:prakashnandhu971@gmail.com">
+                    prakashnandhu971@gmail.com
+                </a>
+            </div>
             <div
                 className="group relative flex items-center justify-center gap-2 md:gap-3 rounded-2xl glass-border bg-transparent p-4 md:p-5 shadow-sm"
                 onMouseEnter={() => setIsHovered(true)}

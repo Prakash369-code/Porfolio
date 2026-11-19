@@ -78,16 +78,18 @@ function App() {
     // Synchronize Lenis with GSAP ScrollTrigger
     lenis.on('scroll', ScrollTrigger.update)
 
-    gsap.ticker.add((time) => {
+    const updateLenis = (time) => {
       lenis.raf(time * 1000)
-    })
+    }
+
+    gsap.ticker.add(updateLenis)
 
     // Prevent GSAP from disabling animations on lag, keeping scroll locked in sync
     gsap.ticker.lagSmoothing(0)
 
     return () => {
       lenis.destroy()
-      gsap.ticker.remove(lenis.raf)
+      gsap.ticker.remove(updateLenis)
     }
   }, [])
 
@@ -293,7 +295,7 @@ function App() {
       {/* Section 1: My Projects */}
       <section id="projects" className="relative w-full min-h-screen bg-gradient-to-b from-teal-50/50 to-emerald-100/30 z-10 flex flex-col pt-24 md:pt-32">
         <div className="w-full max-w-[1600px] mx-auto px-4 flex flex-col items-center justify-start flex-grow relative z-20 overflow-hidden">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4 drop-shadow-sm">My Projects</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4 drop-shadow-sm">Selected Work</h2>
           <Suspense fallback={<div className="h-full w-full flex items-center justify-center">Loading Projects...</div>}>
             <MyProjects />
           </Suspense>

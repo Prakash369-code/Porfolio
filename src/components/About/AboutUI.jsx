@@ -64,7 +64,7 @@ export default function AboutUI({ isVisible }) {
               <div className="mb-6 w-full">
                 <Typewriter 
                   texts={[
-                    "I am a 2nd-year B.Tech student<d:300> in Computer Science and Engineering at LNMIIT Jaipur<d:300> with a deep passion for Competitive Programming<d:300>, Full-Stack Web Development, and Open Source Contributions.<d:500> I specialize in mastering complex algorithmic problem-solving using C++ while architecting high-performance<d:300>, interactive, and responsive web applications.<d:500>"
+                    "I'm Prakash, an experienced WordPress developer<d:300> working across front-end and back-end development.<d:400> I customize themes and plugins to create high-quality, user-friendly websites<d:400> and keep learning as the web evolves.<d:500>"
                   ]}
                   font={{ fontFamily: "Inter", fontWeight: 600, fontSize: 18, lineHeight: "1.6em" }}
                   color="#ffffff"
@@ -77,7 +77,7 @@ export default function AboutUI({ isVisible }) {
               <div className="w-full">
                 <Typewriter 
                   texts={[
-                    "Through 15+ open-source contributions under Social Summer of Code (SSoC)<d:300>, I've honed my ability to solve real-world engineering problems.<d:500> By pairing algorithmic problem-solving<d:300> with high-performance UI design, I bring any vision to life<d:500> —if you can imagine it, I can build it."
+                    "With 3+ years of experience, I've completed 40+ projects for 4+ clients.<d:400> I build responsive WordPress and frontend experiences<d:300>, from WooCommerce stores and custom themes to REST API integrations.<d:400> I focus on performance, SEO, and ongoing support.<d:500>"
                   ]}
                   font={{ fontFamily: "Inter", fontWeight: 400, fontSize: 15, lineHeight: "1.6em" }}
                   color="#94A3B8"
@@ -93,7 +93,7 @@ export default function AboutUI({ isVisible }) {
         {/* Zone 3: Curved Marquee (Bottom) */}
         <motion.div variants={itemVariants} className={`absolute -bottom-5 left-0 w-full h-24 flex items-center justify-center ${isVisible ? 'pointer-events-auto' : 'pointer-events-none'}`}>
           <CurvedMarquee 
-            text=" Codeforces 1094 (Newbie)  |  Codechef 2 stars  |  Open Source 15+ PRs  |  100+ problems of CP-31 Sheet solved  | "
+            text=" WordPress Development  |  Front-End Development  |  WooCommerce  |  REST API Integration  |  Performance & SEO  |  Responsive Design  | "
             font={{ fontFamily: "Inter", fontWeight: 600, fontSize: 56, letterSpacing: "2px" }}
             color="#ffffff"
             baseVelocity={40}

@@ -51,9 +51,9 @@ export function ProjectCard({ project, onSwap }) {
         </h3>
         
         <div className="flex items-center gap-1.5 shrink-0 pointer-events-auto">
-          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="group/icon p-1.5 rounded-lg bg-indigo-200/30 backdrop-blur-md text-slate-600 hover:text-blue-600 transition-all cursor-pointer shadow-[0_2px_6px_rgba(0,0,0,0.05),_inset_0_1px_1px_rgba(255,255,255,0.7)] border border-indigo-200/50">
+          {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="group/icon p-1.5 rounded-lg bg-indigo-200/30 backdrop-blur-md text-slate-600 hover:text-blue-600 transition-all cursor-pointer shadow-[0_2px_6px_rgba(0,0,0,0.05),_inset_0_1px_1px_rgba(255,255,255,0.7)] border border-indigo-200/50">
             <GithubIcon size={16} className="transition-colors" />
-          </a>
+          </a>}
           <a href={project.deployLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="group/icon p-1.5 rounded-lg bg-indigo-200/30 backdrop-blur-md text-slate-600 hover:text-blue-600 transition-all cursor-pointer shadow-[0_2px_6px_rgba(0,0,0,0.05),_inset_0_1px_1px_rgba(255,255,255,0.7)] border border-indigo-200/50">
             <ExternalLink size={16} className="transition-colors" />
           </a>
@@ -109,10 +109,10 @@ export function ActiveProjectCard({ activeProject }) {
         </div>
 
         <div className="flex items-center gap-3 shrink-0 pointer-events-auto mt-1">
-          <a href={activeProject.githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+          {activeProject.githubLink && <a href={activeProject.githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
              className="group/icon p-2.5 rounded-xl bg-indigo-200/30 backdrop-blur-md text-slate-700 hover:text-blue-600 border border-indigo-200/60 transition-all shadow-[0_4px_12px_rgba(0,0,0,0.05),_inset_0_1px_2px_rgba(255,255,255,0.8)] hover:shadow-[0_8px_16px_rgba(0,0,0,0.1),_inset_0_1px_2px_rgba(255,255,255,0.9)] flex items-center justify-center cursor-pointer hover:scale-105 active:scale-95">
             <GithubIcon size={22} className="transition-colors" />
-          </a>
+          </a>}
           <a href={activeProject.deployLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
              className="group/icon p-2.5 rounded-xl bg-indigo-200/30 backdrop-blur-md text-slate-700 hover:text-blue-600 border border-indigo-200/60 transition-all shadow-[0_4px_12px_rgba(0,0,0,0.05),_inset_0_1px_2px_rgba(255,255,255,0.8)] hover:shadow-[0_8px_16px_rgba(0,0,0,0.1),_inset_0_1px_2px_rgba(255,255,255,0.9)] flex items-center justify-center cursor-pointer hover:scale-105 active:scale-95">
             <ExternalLink size={22} className="transition-colors" />
